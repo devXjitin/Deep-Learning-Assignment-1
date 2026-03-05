@@ -179,3 +179,79 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+# ============================================
+# Project-Specific Ignores
+# ============================================
+
+# Large data files (uncomment if you want to ignore large datasets)
+# Data/*.csv
+# Data/*.zip
+# Data/*.tar.gz
+
+# Model checkpoints and weights
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.onnx
+*.pb
+*.weights
+*.model
+models/
+checkpoints/
+saved_models/
+
+# TensorFlow/Keras specific
+*.tflite
+*.tfrecord
+*_model/
+keras_metadata.pb
+
+# PyTorch specific
+*.pth.tar
+
+# Training logs and outputs
+logs/
+runs/
+outputs/
+tensorboard/
+
+# Report outputs (PDFs, Word documents, etc.)
+Report/*.pdf
+Report/*.docx
+Report/*.pptx
+*.aux
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Notebook checkpoints (additional patterns)
+*/.ipynb_checkpoints/*
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
